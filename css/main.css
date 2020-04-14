@@ -11,8 +11,8 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
     background: inherit;
+    color: inherit;
 }
 
 li {
@@ -101,35 +101,45 @@ button {
 
 /* Header: RIGHT-NAV */
 .header-nav.right-nav .nav-list li {
-    background: red;
     margin-left: 15px;
 }
 
-    .dropdown {
+    .dropdown-wrapper {
         position: relative;
-        color: gray;
     }
 
-    .dropdown:hover {
-        color: #000;
-    }   
-
-        .dropdown-content {
-            background: blue;
-            padding: 0 10px;
+        .dropdown-title {
+            color: gray;
         }
 
-        .dropdown-content li {
-            margin: 10px 0;
-        }
+        .dropdown-title:hover {
+            color: #000;
+        }   
 
-        .dropdown-content li:hover {
-            color: black;
-        }
+            .dropdown-content {
+                position: absolute;
+                left: -50px;
+                background: #fff;
+                padding: 0 10px;
+                box-shadow: 2px 2px 10px gray;
+                display: none;
+            }
 
-    .download-button {
-        height: 44px;
-        padding: 0 15px;
-        background: rgb(235, 0, 141);
-        border-radius: 25px;
-    }
+                .dropdown-content li {
+                    padding-top: 15px;
+                    margin: 0 0 15px;
+                    width: 160px;
+                    font-size: 90%;
+                    color: gray;
+                }
+
+                .dropdown-content li:hover {
+                    color: black;
+                }
+
+        .download-button {
+            height: 44px;
+            padding: 0 15px;
+            background: rgb(235, 0, 141);
+            border-radius: 25px;
+        }
