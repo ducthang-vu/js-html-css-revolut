@@ -10,8 +10,7 @@ $(document).ready(function () {
     var delayedHide
 
 
-    dropdownTitles.mouseenter(function(e) {
-        e.preventDefault()
+    dropdownTitles.mouseenter(function() {
         dropdownContents.hide()
         $(this).next().show()}
     )
