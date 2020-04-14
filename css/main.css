@@ -1,0 +1,38 @@
+/*  GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* UTILITIES */
+.container {
+    width: 1140px;
+    max-width: 90%;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.relative {
+    display: relative;
+}
+
+.absolute {
+    display: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.central {
+    margin: auto;
+}
