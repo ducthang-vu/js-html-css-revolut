@@ -148,11 +148,20 @@ button {
                     color: black;
                 }
 
+                    .beta {
+                        top: 0;
+                        left: calc(100% + 5px);
+                        transform: translateY(-50%);
+                        font-size: 80%;
+                        color: rgb(235, 0, 141)
+                    }
+
         .download-button {
             height: 44px;
             padding: 0 15px;
             background: rgb(235, 0, 141);
             border-radius: 25px;
+            font-weight: 500;
         }
     
 .right-nav .nav-list > li > a {
