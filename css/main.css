@@ -11,13 +11,24 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+    background: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    border: 0;
 }
 
 /* UTILITIES */
 .container {
     width: 1140px;
     max-width: 90%;
-    padding: 30px;
+    padding: 30px 10px;
 }
 
 .block {
@@ -48,15 +59,18 @@ a {
     margin: auto;
 }
 
+.white-color {
+    color: white;
+}
 
 /* HEADER */
 .header .container {
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-list {
     align-items: center;
-    list-style: none;
 }
 
 
@@ -69,8 +83,6 @@ a {
 .leftBar-button {
     height: 32px;
     padding: 0 15px;
-    border: 0;
-    outline: none;
     background: inherit;
     color: gray;
     cursor: pointer;
@@ -88,3 +100,36 @@ a {
 
 
 /* Header: RIGHT-NAV */
+.header-nav.right-nav .nav-list li {
+    background: red;
+    margin-left: 15px;
+}
+
+    .dropdown {
+        position: relative;
+        color: gray;
+    }
+
+    .dropdown:hover {
+        color: #000;
+    }   
+
+        .dropdown-content {
+            background: blue;
+            padding: 0 10px;
+        }
+
+        .dropdown-content li {
+            margin: 10px 0;
+        }
+
+        .dropdown-content li:hover {
+            color: black;
+        }
+
+    .download-button {
+        height: 44px;
+        padding: 0 15px;
+        background: rgb(235, 0, 141);
+        border-radius: 25px;
+    }
