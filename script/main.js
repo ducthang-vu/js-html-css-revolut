@@ -12,12 +12,16 @@ $(document).ready(function () {
 
     dropdownTitles.mouseenter(function() {
         dropdownContents.hide()
+        dropdownTitles.removeClass('active')
+        $(this).addClass('active')
         $(this).next().show()}
+        
     )
 
     $('.dropdown-content, .dropdown-title').mouseleave(function(){
         delayedHide = setTimeout(function() {
             dropdownContents.hide()
+            dropdownTitles.removeClass('active')
         }, 200)
     }).mouseenter(function() {
         clearTimeout(delayedHide)
