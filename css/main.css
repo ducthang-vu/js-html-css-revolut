@@ -22,7 +22,9 @@ li {
 button {
     outline: none;
     border: 0;
+    cursor: pointer;
 }
+
 
 /* UTILITIES */
 .container {
@@ -44,11 +46,11 @@ button {
 }
 
 .relative {
-    display: relative;
+    position: relative;
 }
 
 .absolute {
-    display: absolute;
+    position: absolute;
 }
 
 .text-center {
@@ -73,6 +75,9 @@ button {
     align-items: center;
 }
 
+.nav-list > * {
+    cursor: pointer;
+}
 
 /* Header: LEFT-NAV */
 .header-nav.left-nav .logo {
@@ -85,7 +90,6 @@ button {
     padding: 0 15px;
     background: inherit;
     color: gray;
-    cursor: pointer;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -112,13 +116,15 @@ button {
             color: gray;
         }
 
-        .dropdown-title:hover {
+        .dropdown-title:hover
+        .dropdown-title:active {
             color: #000;
         }   
 
             .dropdown-content {
                 position: absolute;
                 left: -50px;
+                top: calc(100% + 10px);
                 background: #fff;
                 padding: 0 10px;
                 box-shadow: 2px 2px 10px gray;
@@ -143,3 +149,19 @@ button {
             background: rgb(235, 0, 141);
             border-radius: 25px;
         }
+    
+.right-nav .nav-list > li > a {
+    color:gray;
+    width: 25px;
+}
+
+.right-nav .nav-list > li > a:hover {
+    color: #000;
+}
+
+.right-nav .nav-list > li > a > i {
+    font-size: 80%;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(-100%)
+}
