@@ -20,6 +20,7 @@ li {
 }
 
 button {
+    font-family: 'Roboto', sans-serif;
     outline: none;
     border: 0;
     cursor: pointer;
