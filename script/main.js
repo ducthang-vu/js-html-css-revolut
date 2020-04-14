@@ -5,26 +5,33 @@ $(document).ready(function () {
 
     const dropdownTitles = $('.dropdown-title')
     const dropdownContents = $('.dropdown-content')
-    const dropdownWrapper = $('.dropdown-wrapper')
     const leftBarButtons = $('.leftBar-button')
     const itLink = $('#it-link')
+    var delayedHide
 
-    dropdownTitles.mouseenter(function() {
-        preventDefault()
+
+    dropdownTitles.mouseenter(function(e) {
+        e.preventDefault()
         dropdownContents.hide()
         $(this).next().show()}
     )
 
-    $('body').not()
+    $('.dropdown-content, .dropdown-title').mouseleave(function(){
+        delayedHide = setTimeout(function() {
+            dropdownContents.hide()
+        }, 200)
+    }).mouseenter(function() {
+        clearTimeout(delayedHide)
+    })
 
+    
     leftBarButtons.click(function() {
         leftBarButtons.toggleClass('active');
     })
 
+
     itLink.mouseover(function() {
         itLink.children('i').toggleClass('fa-angle-down fa-angle-up')
-    }
-    )
-
+    })
 
 })
