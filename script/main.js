@@ -18,14 +18,14 @@ $(document).ready(function () {
         
     )
 
-    /*$('.dropdown-content, .dropdown-title').mouseleave(function(){
+    $('.dropdown-content, .dropdown-title').mouseleave(function(){
         delayedHide = setTimeout(function() {
             dropdownContents.hide()
             dropdownTitles.removeClass('active')
         }, 200)
     }).mouseenter(function() {
         clearTimeout(delayedHide)
-    })*/
+    })
 
     
     leftBarButtons.click(function() {
