@@ -15,7 +15,6 @@ $(document).ready(function () {
         dropdownTitles.removeClass('active')
         $(this).addClass('active')
         $(this).next().show()}
-        
     )
 
     $('.dropdown-content, .dropdown-title').mouseleave(function(){
