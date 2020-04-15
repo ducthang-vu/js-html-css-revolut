@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     dropdownTitles.mouseenter(function() {
         dropdownContents.hide()
-        dropdownTitles.removeClass('active')
+        dropdownTitles.not($(this)).removeClass('active')
         $(this).addClass('active')
         $(this).next().show()}
     )
